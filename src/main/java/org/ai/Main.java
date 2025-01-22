@@ -26,16 +26,6 @@ class Weight {
     }
 }
 
-class Diff {
-    float d1;
-    float d2;
-
-    Diff(float d1, float d2) {
-        this.d1 = d1;
-        this.d2 = d2;
-    }
-}
-
 public class Main {
     static Data[] train_data = new Data[]{
         new Data(1, 1, 1),
@@ -54,8 +44,6 @@ public class Main {
 
         for (int i = 0; i < 1000; i++) {
             apply(w, eps, rate);
-            // System.out.println("model: " + model(w, train_data[3]));
-            // System.out.println("model: " + activate((float) i));
         }
 
         System.out.println("Loss: " + loss(w));
