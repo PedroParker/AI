@@ -1,5 +1,5 @@
 plugins {
-    id("java")
+    id("application")
 }
 
 group = "org.ai"
@@ -7,6 +7,10 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
+}
+
+application {
+    mainClass = "org.ai.Main"
 }
 
 dependencies {
